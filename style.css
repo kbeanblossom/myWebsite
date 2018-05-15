@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1060px) {
+    #primary {width:63%; }
+    #secondary {width:130%; margin-left:3%; }
+}
+
+@media screen and (max-width: 768px) {
+    #primary {width:100%; }
+    #secondary {width:100%; margin:0; border:none; }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.content {
+    max-width: 100%;
+    margin: auto;
+
+}
+.topNav {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#button {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: lightblue;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.topNav a:hover {
+    background-color: white;
+    color: blue;
+}
+
+div.time {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
