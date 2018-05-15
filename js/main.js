@@ -1,5 +1,6 @@
 var pic = document.getElementById("pic");
 var button = document.getElementById("button");
+var underText = document.getElementById("underText");
 
 button.addEventListener("click", changePic);
 window.onload = startTime();
@@ -7,10 +8,20 @@ window.onload = startTime();
 function changePic() {
     if (pic.style.visibility == "hidden") {
         pic.style.visibility = "visible";
-        button.innerText = "Hide Picture"
+        button.innerText = "Hide Picture";
+        changeText();
     } else {
         pic.style.visibility = "hidden";
         button.innerText = "Show Picture";
+        changeText();
+    };
+};
+
+function changeText() {
+    if (pic.style.visibility == "visible") {
+       underText.style.visibility = "visible"; 
+    } else {
+        underText.style.visibility = "hidden";
     };
 };
 
