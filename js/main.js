@@ -1,8 +1,10 @@
 var pic = document.getElementById("pic");
 var button = document.getElementById("button");
-var underText = document.getElementById("underText");
 
-button.addEventListener("click", changePic);
+function start() {
+    button.addEventListener("click", changePic);
+};
+
 window.onload = startTime();
 
 function changePic() {
