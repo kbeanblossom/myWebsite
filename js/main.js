@@ -1,11 +1,8 @@
 var pic = document.getElementById("pic");
 var button = document.getElementById("button");
 
-function start() {
-    button.addEventListener("click", changePic);
-};
+window.onload = start();
 
-window.onload = startTime();
 
 function changePic() {
     if (pic.style.visibility == "hidden") {
@@ -27,7 +24,7 @@ function changeText() {
     };
 };
 
-function startTime() {
+function start() {
     var today = new Date();
     var h = today.getHours();
     var m = today.getMinutes();
@@ -35,11 +32,11 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     if (h > 12) { 
-        document.getElementById("time").innerHTML = h - 12 + ":" + m + ":" + s + "PM";
+        document.getElementById("time").innerHTML = h - 12 + ":" + m + ":" + s + "PM" + "<hr>" + "Website developed by Kyle Beanblossom";
     } else {
         document.getElementById("time").innerHTML = h + ":" + m + ":" + s + "AM";
     };
-    var t = setTimeout(startTime, 500);
+    var t = setTimeout(start, 500);
 };
 
 function checkTime(i) {
