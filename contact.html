@@ -15,10 +15,31 @@
             </div>
             <h1>Please Contact Me!</h1>
             <p>This is a test contact page on my test website!</p>
-            <h2>My Contact Information</h2>
+
+            <form action="mailto:kbeanblossom@knoxvillechamber.com?subject=Response from website" method="post" enctype="text/plain" id="contactForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" autocomplete="name" placeholder="Name">
+                </div>
+                <div>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_mail" autocomplete="email" placeholder="Email Address">
+                </div>
+                <div>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message" placeholder="Please type your message here"></textarea>
+                </div>
+                <div class="formButton">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+
+<!--        <h2>My Contact Information</h2>
             <p>Kyle Beanblossom</p>
             <p>Technical Support Representative at the Knoxville Chamber</p>
             <p>865-246-2636</p>
+            <a id="email" href="mailto:kbeanblossom@knoxvillechamber.com>">kbeanblossom@knoxvillechamber.com</a>-->
+            
         </div>
         <div id="time" class="footer"></div>
         <script src="js/main.js"></script>

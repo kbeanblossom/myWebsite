@@ -3,7 +3,6 @@ var button = document.getElementById("button");
 
 window.onload = start();
 
-
 function changePic() {
     if (pic.style.visibility == "hidden") {
         pic.style.visibility = "visible";
