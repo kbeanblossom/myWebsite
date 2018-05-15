@@ -18,6 +18,10 @@ body {
     background: white
 }
 
+.active {
+    color: blue;
+}
+
 .content {
     max-width: 100%;
     margin: auto;
