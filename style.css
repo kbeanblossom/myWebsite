@@ -11,10 +11,7 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     padding-top: 10px;
-    text-align: center;
     background-image: url("resources/background.jpg");
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -38,8 +35,12 @@ p {
 .content {
     max-width: 100%;
     margin: auto;
-
 }
+
+.centered {
+    text-align: center;
+}
+
 .topNav {
     font-weight: bold;
     background: grey;
@@ -54,8 +55,9 @@ p {
     color: white;
 }
 
-#button {
+.button {
     font-weight: bold;
+    text-align: center;
 }
 
 .footer {
@@ -66,6 +68,7 @@ p {
     left: 40%;
     padding: 5px;
     background: grey;
+    text-align: center;
 }
 
 hr {
@@ -112,4 +115,30 @@ textarea {
 
 formButton {
     margin-left: .5em;
+}
+
+.article {
+    display: inline-block;
+    text-align: left;
+    width: 500px;
+    margin: auto;
+    padding: 5px;
+    border: 3px solid white;
+}
+
+.separator {
+    padding: 10px;
+}
+
+.container {
+    position: absolute;
+    left: 5px;
+    text-align: left;
+    width: 650px;
+    padding: 5px;
+    border: 5px solid white;
+}
+
+.navigationSpace {
+    padding-left: 10px;
 }

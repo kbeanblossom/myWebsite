@@ -9,20 +9,25 @@
     </head>
     <body>
         <div class="content">
-            <div class="topNav">
-                <a class="active" href="#home">Home</a>
-                <a href="news.html">News</a>
-                <a href="contact.html">Contact</a>
-                <a href="about.html">About</a>
+            <div class="centered">
+                <div class="topNav">
+                    <a href="index.html">Home</a>
+                    <span class="navigationSpace"></span>
+                    <a href="news.html">News</a>
+                    <span class="navigationSpace"></span>
+                    <a href="contact.html">Contact</a>
+                    <span class="navigationSpace"></span>
+                    <a class="active" href="#about">About</a>
+                </div>
+                <h1>Welcome to my test website!</h1>
+                <p>This is just a test website. I am trying to learn HTML, CSS, and Javascript to build a website.</p>
+                <button class="button" onclick="changePic()">Show Picture</button>
+                <div></div>
+                <img id="pic" src="resources/IMG_0233.jpg" width="302" height="403" style="visibility:hidden"></img>
+                <p id="underText" style="visibility:hidden">Look at my picture!</p>
+                </div>
+                <div id="time" class="footer"></div>
             </div>
-            <h1>Welcome to my test website!</h1>
-            <p>This is just a test website. I am trying to learn HTML, CSS, and Javascript to build a website.</p>
-            <button id="button" class="button" onclick="changePic()">Show Picture</button>
-            <div></div>
-            <img id="pic" src="resources/IMG_0233.jpg" width="302" height="403" style="visibility:hidden"></img>
-            <p id="underText" style="visibility:hidden">Look at my picture!</p>
-        </div>
-        <div id="time" class="footer"></div>
         <script src="js/main.js"></script>
     </body>
 </html>

@@ -7,30 +7,34 @@
     </head>
     <body>
         <div class="content">
-            <div class="topNav" id="topNav">
-                <a href="index.html">Home</a>
-                <a href="news.html">News</a>
-                <a class="active" href="#contact">Contact</a>
-                <a href="about.html">About</a>
-            </div>
-            <h1>Please Contact Me!</h1>
-            <p>This is a test contact page on my test website!</p>
-
-            <form action="mailto:kbeanblossom@knoxvillechamber.com?subject=Response from website" method="post" enctype="text/plain" id="contactForm">
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name" autocomplete="name" placeholder="Name">
+            <div class="centered">
+                <div class="topNav" id="topNav">
+                    <a href="index.html">Home</a>
+                    <span class="navigationSpace"></span>
+                    <a href="news.html">News</a>
+                    <span class="navigationSpace"></span>
+                    <a href="contact.html">Contact</a>
+                    <span class="navigationSpace"></span>
+                    <a class="active" href="#about">About</a>
                 </div>
-                <div>
-                    <label for="mail">Email:</label>
-                    <input type="email" id="mail" name="user_mail" autocomplete="email" placeholder="Email Address">
-                </div>
-                <div>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message" placeholder="Please type your message here"></textarea>
-                </div>
-                <div class="formButton">
-                    <button type="submit">Submit</button>
+                <h1>Please Contact Me!</h1>
+                <p>This is a test contact page on my test website!</p>
+                <form action="mailto:kbeanblossom@knoxvillechamber.com?subject=Response from website" method="post" enctype="text/plain" id="contactForm">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" autocomplete="name" placeholder="Name">
+                    </div>
+                    <div>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_mail" autocomplete="email" placeholder="Email Address">
+                    </div>
+                    <div>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message" placeholder="Please type your message here"></textarea>
+                    </div>
+                    <div class="formButton">
+                        <button type="submit">Submit</button>
+                    </div>
                 </div>
             </form>
 
